@@ -1,0 +1,25 @@
+import turtle as trtl
+painter = trtl.Turtle()
+
+#square
+painter.fillcolor("yellow")
+
+painter.begin_fill()
+
+for i in range (4):
+    painter.forward(150)
+    painter.right(90)
+painter.end_fill()
+
+#roof
+painter.fillcolor("red")
+
+painter.begin_fill()
+
+for i in range(3):
+    painter.forward(150)
+    painter.left(120)
+painter.end_fill()
+
+wn=trtl.Screen()
+wn.mainloop()
